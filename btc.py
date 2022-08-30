@@ -10,6 +10,8 @@ import os
 filesPath="./tradesEth/"
 instrument="tETHF0:USTF0"
 
+if not os.path.exists(filePath): os.mkdir(filePath)
+
 fCnt=0
 res=[]
 files=os.listdir(filesPath)
